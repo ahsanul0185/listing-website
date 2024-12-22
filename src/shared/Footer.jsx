@@ -92,7 +92,7 @@ const Footer = () => {
     <div className="border-t border-t-gray-200 pt-14 md:pt-[4rem] bg-white">
       <div className="container section-padding">
         {/* Footer Links */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-8 pb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-8 sm:pb-8">
           {/* Quick Links */}
           <div className="">
             <h2
@@ -279,7 +279,7 @@ const Footer = () => {
         </div>
 
         {/* Footer Text */}
-        <div className="border-t border-t-gray-200 py-8 flex flex-col lg:flex-row gap-5 items-center justify-between">
+        <div className="border-t-0 sm:border-t border-t-gray-200 py-8 flex flex-col lg:flex-row gap-5 items-center justify-between">
           <div className="flex items-center flex-wrap gap-2">
             <div className="flex items-center gap-2">
               <div className="text-[#555] w-fit bg-[#f2f2f2] px-2 py-1.5 rounded-sm flex justify-between items-center gap-3">
