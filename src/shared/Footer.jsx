@@ -280,7 +280,7 @@ const Footer = () => {
 
         {/* Footer Text */}
         <div className="border-t-0 sm:border-t border-t-gray-200 py-8 flex flex-col lg:flex-row gap-5 items-center justify-between">
-          <div className="flex items-center flex-wrap gap-2">
+          <div className="flex justify-center items-center flex-wrap gap-2">
             <div className="flex items-center gap-2">
               <div className="text-[#555] w-fit bg-[#f2f2f2] px-2 py-1.5 rounded-sm flex justify-between items-center gap-3">
                 <span className="text-xs font-semibold">English</span>{" "}

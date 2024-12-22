@@ -30,7 +30,7 @@ const Header = ({ isMobileMenuOpen, setIsMobileMenuOpen, setIsShowSignPopup, scr
         </div>
 
         {/* Logo */}
-        <div className="text-2xl text-blue-600 font-bold absolute top-[22px] md:top-4 left-1/2 -translate-x-1/2 md:static md:-translate-x-0">
+        <div className="text-2xl text-blue-600 font-bold absolute top-[16px] md:top-4 left-1/2 -translate-x-1/2 md:static md:-translate-x-0">
           Logo
         </div>
 
