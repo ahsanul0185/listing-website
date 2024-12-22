@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary : #004dda;
+  }
+}
+
+.theme-default {
+   --color-primary : #004dda;
+   --color-primaryDark : #001741;
+}
+
+.theme-teal {
+  --color-primary : #1cbbb4;
+  --color-primaryDark : #0e5d5a;
+}
+
+.theme-violate {
+  --color-primary : #6449e7;
+  --color-primaryDark : #322473;
+}
+
+.theme-orange {
+  --color-primary : #f7941d;
+  --color-primaryDark : #7b4a0e;
+}
+
+.theme-tan {
+  --color-primary : #bea882;
+  --color-primaryDark : #5f5441;
+}
+
+.theme-green {
+  --color-primary : #18a84c;
+  --color-primaryDark : #0c5426;
+}
+
+
+@layer components {
+  .section-padding {
+    @apply mx-auto xl:max-w-6xl px-5 md:px-10 ;
+  }
+
+  .custom-scrollbar {
+    @apply overflow-y-auto
+      [&::-webkit-scrollbar]:w-2
+      [&::-webkit-scrollbar-track]:rounded-full
+      [&::-webkit-scrollbar-track]:bg-gray-100
+      [&::-webkit-scrollbar-thumb]:rounded-full
+      [&::-webkit-scrollbar-thumb]:bg-gray-300
+      ;
+  }
+
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
