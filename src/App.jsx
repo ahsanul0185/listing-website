@@ -1,13 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import Home from "./pages/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Header from "./shared/Header";
 import MobileMenu from "./shared/MobileMenu";
 import Footer from "./shared/Footer";
 import ScrollDetectionComponent from "./helpers/scrollDetector";
 import Overlay from "./components/Overlay";
 import SignInPopup from "./components/SignInPopup";
-import ColorSwitcher from "./components/ColorSwitcher";
 import BackToTopButton from "./components/BackToTopButton";
 
 const App = () => {
@@ -15,16 +14,12 @@ const App = () => {
   const [isShowSignPopup, setIsShowSignPopup] = useState(false);
   const pageRef = useRef(null);
   const { scrolled } = ScrollDetectionComponent(pageRef);
-
   const [theme, setTheme] = useState("default")
 
   return (
     <div className={`overflow-hidden z-0 bg-white theme-${theme}`}>
       {/* Mobile Menu */}
       <MobileMenu />
-
-      {/* Color Switcher */}
-      <ColorSwitcher color={theme } setTheme={setTheme} />
 
       {/* Sign In Popup Box */}
       <SignInPopup isShowSignPopup={isShowSignPopup} setIsShowSignPopup={setIsShowSignPopup} />
@@ -59,6 +54,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
+
         <Footer />
       </div>
     </div>
